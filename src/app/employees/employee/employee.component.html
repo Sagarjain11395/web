@@ -1,0 +1,23 @@
+
+<h1>Saru Collection</h1>
+
+<form #form="ngForm" autocomplete="off" (submit)="onSubmit(form)">
+  <div class="form-group">
+    <input name="fullName" #fullName="ngModel" [(ngModel)]="service.formData.fullName" class="form-control" placeholder="Full nsme" required>
+    <div *ngIf="fullName.invalid && fullName.touched" class="validation-error">This field is required.</div>
+  </div>
+  <div class="form-group">
+      <input name="city" #city="ngModel" [(ngModel)]="service.formData.city" class="form-control" placeholder="city">
+    </div>
+    <div class="form-row">
+        <div class="form-group col-md-6">
+            <input name="empcode" #empcode="ngModel" [(ngModel)]="service.formData.empcode" class="form-control" placeholder="emp.code">
+          </div>
+          <div class="form-group col-md-6">
+              <input name="mobile" #mobile="ngModel" [(ngModel)]="service.formData.mobile" class="form-control" placeholder="mobile">
+            </div>
+    </div>
+    <div class="form-group">
+      <button type= "submit" [disabled]="form.invalid" class="btn. btn-lg. btn-block.btn-info">SUBMIT</button>
+    </div>
+</form>
