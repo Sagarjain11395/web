@@ -18,6 +18,8 @@ import { EmployeeService } from './shared/employee.service';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
 import { AboutComponent } from './about/about.component';
+import { SubhomeComponent } from './subhome/subhome.component';
+import { SubservicesComponent } from './subservices/subservices.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { AboutComponent } from './about/about.component';
     EmployeeListComponent,
     HeaderComponent,
     FooterComponent,
-    AboutComponent
+    AboutComponent,
+    SubhomeComponent,
+    SubservicesComponent
   ],
   imports: [
     BrowserModule,
