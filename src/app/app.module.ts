@@ -17,6 +17,7 @@ import { EmployeeListComponent } from './employees/employee-list/employee-list.c
 import { EmployeeService } from './shared/employee.service';
 import { HeaderComponent } from './header/header.component';
 import { FooterComponent } from './footer/footer.component';
+import { AboutComponent } from './about/about.component';
 
 @NgModule({
   declarations: [
@@ -25,7 +26,8 @@ import { FooterComponent } from './footer/footer.component';
     EmployeeComponent,
     EmployeeListComponent,
     HeaderComponent,
-    FooterComponent
+    FooterComponent,
+    AboutComponent
   ],
   imports: [
     BrowserModule,
